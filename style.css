@@ -1,0 +1,325 @@
+*{
+    margin: 0%; padding: 0%; 
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+    
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5% 2.5%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    z-index: 10;
+}
+.brand-logo{
+    width: 100%;
+    height: 100%;
+}
+    
+.navbar-brand{
+    width: 100px;
+    height: 100%;
+}
+
+.brand-logo{
+    width: 100%;
+    height: 100%;
+    
+    
+}
+.languages-drop-down{
+    background: transparent;
+    border: none;
+    color: white;
+    
+}
+.languages-drop-down:focus{
+    outline: none;
+    background-color: rgb(61, 61, 61);
+    
+}
+.dropdown-container{
+    border: 1px solid white;
+    padding: 0.4rem;
+    display: flex;
+    border-radius: 4px;
+    background: rgba(0,0,0,0.4);
+    background: transparent;
+}
+
+.sign-in{
+    background-color: red;
+    padding: 0.4rem;
+    border: 1px solid red;
+    border: none;
+    width: 100px;
+    height: 35px;
+    color: white;
+    border-radius: 4px;
+    
+}
+.nav-items{
+    display: flex;
+    gap: 30px;
+}
+
+.bg-img-container{
+    height: 75vh;
+    width: 100%;
+    
+}
+.bg-img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.bg-overlay{
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 75vh;
+    background: rgba(0,0,0,0.4);
+
+}
+.card{
+    position: absolute;
+    top: 18%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.title{
+    font-weight: 575;
+    font-size: 1.8rem;
+}
+.subtitle{
+    font-weight: 400;
+    font-size: 1rem;
+}
+.discription{
+    font-size:16px;
+    font-weight: 400;
+}
+.email-input{
+    border: none;
+    background: transparent;
+    width: 100%;
+    height: 100%;
+    padding-left: 7px;
+    
+
+}
+.email-form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.form-container{
+      background-color: white;  
+      width: 90%;
+      height: 50px;
+      position: relative;
+      
+}
+.email-label{
+    color: black;
+    position: absolute;
+    top: 28%;
+    left: 2%;
+    color: rgb(135,149,149)
+}
+.email-input:focus + .email-label{
+    top: 0.2rem;
+    font-size: 10px;
+
+    
+}
+.email-input:not(:placeholder-shown).email-input:not(:focus) + .email-label{
+    top: 0.2rem;
+    font-size: 10px;
+}
+.primary-button{
+    background-color: red;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid red;
+    border-radius: 2px;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: white;
+    margin-top: 19px;
+}
+.feature{
+    border-top: 8px solid #222;
+    padding: 2rem 1rem;
+}
+.feature-title{
+    font-weight: 600;
+    font-size: 25px;
+    text-align: center;
+    margin: 10px 0;
+    
+}
+.feature-subtitle{
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+.feature-details{
+   text-align: center;
+}
+.feature-image-container{
+    position: relative;
+    align-items: right;
+    width: 100%;
+}
+.feature-image{
+    width: 100%;
+}
+.feature-video-container{
+    position: absolute;
+    width: 100%;
+    top: 20%;
+    width: 100%;
+    left: 13%;
+    z-index: -2;
+    max-width: 73%;
+    height: 100%;
+
+}
+.feature-video{
+    width: 100%;
+}
+.FAQ-accordian{
+    width: 100%;
+}
+.FAQ-title{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 20px;
+    font-size: 18px;
+    background-color: #303030;
+    border: 1px solid #303030;
+    color: white;
+}
+.FAQ-visible{
+    background-color: #303030;
+    border-top: 1px solid black;
+    padding: 1rem;
+
+}
+.FAQ-visible >p{
+    margin: 1rem 0;
+}
+@media(min-width: 768px){
+    .bg-img-container{
+        height: 100vh;
+    }
+    .bg-overlay{
+        height: 100vh;
+        
+    }
+    
+    .card{
+        top: 40%;
+        left: 40%;
+        transform: translate(-20%,-20%);
+    }
+    .title{
+        font-size: 3rem;
+
+    }
+    .feature{
+        padding: 4rem;
+    }
+    .feature-title{
+        font-size: 35px;
+    }
+    .feature-2-image-container{
+        display: flex;
+        align-items: center;
+        border: 1px solid white;
+        background-color: black;
+        border-radius:  8px; 
+    }
+    .poster-container{
+        height: 100px;
+        width: 100px;
+    }
+}
+
+@media(min-width: 1024px){
+    .navbar{
+        padding: 2% 3.5%;
+    }
+    .navbar-brand{
+        width: 165px;
+    }
+    .sign-in{
+        font-size: 18px;
+    }
+    .dropdown-container{
+        padding: 8px 18px;
+    }
+    .form-container{
+        width: 78%;
+    }
+    .email-form-container{
+        flex-direction: row;
+        align-items: center;
+    }
+    .primary-button{
+        display: flex;
+        width: 29%;
+        height: 50.5px;
+        margin-bottom: 3.1%;
+        font-size: 19px;
+    }
+    .feature{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+    .feature-details{
+        
+        text-align: left;
+        padding: 0 6rem;
+        
+        
+    }
+    .feature-image-container{
+        max-width: 550px;
+        
+        
+       
+    }
+    .feature-title{
+        font-size: 50px;
+        text-align: left;
+    }
+    .feature-subtitle{
+        font-size: 25px;
+        text-align: left;
+        
+        
+    }
+    .feature:nth-child(even){
+        flex-direction: row-reverse;
+    }
+
+
+@media(min-width: 1254px){
+
+}
+
